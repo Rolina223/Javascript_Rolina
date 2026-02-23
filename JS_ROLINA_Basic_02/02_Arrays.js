@@ -1,9 +1,4 @@
 
-// JavaScript Array Advanced Concepts
-
-
-
-// ===============================
 // Combining Arrays
 
 const cricketInd = ["Sachin", "Rahul", "Dhoni"];
@@ -22,7 +17,7 @@ console.log("Using concat():", cricketNew);
 // Output: ['Hayden','Gilchrist','Ponting','Sachin','Rahul','Dhoni']
 
 
-// ➤ Spread Operator (...) – Modern & clean way to merge arrays
+//Spread Operator (...) – Modern & clean way to merge arrays
 const supCricket = [...cricketAus, ...cricketInd, ...cricketAus];
 console.log("Using spread operator:", supCricket);
 
