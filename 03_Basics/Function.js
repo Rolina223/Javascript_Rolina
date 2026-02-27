@@ -60,3 +60,55 @@ function userNewLogged(username = "LiRo") {
 }
 
 console.log(userNewLogged());
+
+
+//Fubcrion Rest property
+
+function calculateCartPrice(num)
+{
+    return num;
+}
+
+console.log(calculateCartPrice(100,200,300,400)); // 100 it takes the first value
+
+function calculateCartPriceSecond(...num)  // ... -> Rest property 
+{
+    return num;
+}
+
+console.log(calculateCartPriceSecond(100,200,300,400,500,600,700)); // [ 100.2, 300, 400, 500, 600, 700 ] -> Value is stored in array
+
+
+function calculateCartPriceThird(val1,val2,val3,...num)  // ... -> Rest property 
+{
+    return num;
+}
+
+console.log(calculateCartPriceThird(200,300,400,500,600,700)); //[ 500, 600, 700 ] -> Value (200,300,400 stored in val1, val2, val3) and rest value is print
+
+const myProfile ={
+    naame : "Rolina",
+    Age : 27,
+    Proff : "Engineer"
+}
+
+function getMyProfile(anyObject)
+{
+     console.log(`my name is ${anyObject.naame} & my age is ${anyObject.Age} and my profession is ${anyObject.Proff}`)
+}
+
+getMyProfile(myProfile)
+getMyProfile({
+    naame : "LIRO",
+    Age:123,
+    Proff : "Java Developer"
+})
+
+const myArray = [1,2,3,4,5,6,7]
+
+function getArray(takeArray)
+{
+    return takeArray[4]
+}
+
+console.log(getArray(myArray))
