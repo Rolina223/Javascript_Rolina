@@ -19,3 +19,26 @@ for (var i = 1; i <= 3; i++) {
         console.log(i);
     }, 1000);
 }
+
+
+console.log("Start")
+
+function cb()
+{
+    console.log("Call back");
+    
+}
+
+setTimeout(cb,3000);
+
+console.log("End");
+console.log("start");
+
+setTimeout(function bcb(){
+    console.log("Heyyyyyyyyyyyyyyy");
+    
+},6000);
+
+console.log("Default");
+
+
