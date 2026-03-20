@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Paragraphs with Colors</title>
+</head>
+<body style="background-color: rgb(19, 220, 156); text-align: center;">
+</body>
+<script>
+
+// Function to create paragraph
+function createParagraph(text, color){
+    const para = document.createElement('p')
+    para.innerText = text
+    para.style.color = color   // Add color dynamically
+    document.body.appendChild(para)
+}
+
+// Array of paragraph texts
+const texts = [
+    "Hello world",
+    "Learning DOM",
+    "JavaScript is fun",
+    "Keep practicing",
+    "You will win"
+]
+
+// Array of colors
+const colors = ["red","green","gold","pink","yellow","cyan"]
+
+// Loop through paragraphs
+for (let i = 0; i < texts.length; i++) {
+    createParagraph(texts[i], colors[i % colors.length])  // repeat colors if fewer than paragraphs
+}
+
+</script>
+
+</html>
