@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Element Creation</title>
+</head>
+
+<body style="background-color: rgba(12, 223, 117, 0.758); text-align: center;">
+    
+</body>
+
+<script>
+   
+   //Function to create paragraph
+
+   function createParagrph(para)
+   {
+     const text = document.createElement('p')
+     text.innerText = para
+     document.body.appendChild(text)
+   }
+
+   function createHeading(headText)
+   {
+    const text = document.createElement('h2')
+    text.innerText = headText
+    document.body.appendChild(text)
+   }
+   
+   createHeading("DOM sikh rha hu")
+   createParagrph("Thora bahut sikh liya")
+   createParagrph("Avi or sikhna baki hai")
+   createParagrph("Avi or sikhna baki hai")
+   createParagrph("Avi or sikhna baki hai")
+   createParagrph("Avi or sikhna baki hai")
+
+   const allPara = document.querySelectorAll('p')
+   console.log(allPara);
+   
+   
+//    for (let i = 0; i<allPara.length; i++) {
+//             allPara[i].style.color = "gold"
+//    }
+
+const color = ["red","green","gold","pink"]
+
+for (let i = 0; i < allPara.length; i++) {
+    allPara[i].style.color = color[i];
+    
+}
+
+</script>
+
+</html>
