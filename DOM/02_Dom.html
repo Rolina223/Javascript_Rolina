@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Traversal</title>
+
+    <style>
+        body {
+            background-color: darkcyan;
+            color: gold;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .parent {
+            margin-top: 40px;
+        }
+
+        .day {
+            padding: 10px;
+            margin: 5px;
+            background-color: teal;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>DOM Traversal Practice</h2>
+
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+        <div class="day">Friday</div>
+    </div>
+</body>
+
+<script>
+    // Select parent element
+    const parent = document.querySelector('.parent');
+
+    // Loop through children
+    console.log("All Days:");
+    for (let i = 0; i < parent.children.length; i++) {
+        console.log(parent.children[i].innerHTML);
+    }
+
+    // First & Last Child
+    console.log("First Day:", parent.firstElementChild.innerHTML);
+    console.log("Last Day:", parent.lastElementChild.innerHTML);
+
+    // Access parent from child
+    const dayOne = document.querySelector('.day');
+    console.log("Selected Day:", dayOne.innerHTML);
+    console.log("Parent Element:", dayOne.parentElement);
+
+    // Next sibling
+    console.log("Next Day:", dayOne.nextElementSibling.innerHTML);
+
+    // All nodes (including text nodes)
+    console.log("Child Nodes:", parent.childNodes);
+</script>
+
+</html>
