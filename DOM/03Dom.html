@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Element Creation</title>
+</head>
+
+<body style="background-color: thistle; text-align: center;">
+    
+</body>
+
+<script>
+    // Create element
+    const div = document.createElement('div');
+    console.log(div);
+
+    // Set class and id
+    div.className = "main";
+    div.id = Math.round(Math.random() * 10 + 1);
+
+    // Set attribute
+    div.setAttribute("title", "newTitle");
+
+    // Add styles
+    div.style.backgroundColor = "gold";
+    div.style.padding = "12px";
+    div.style.border = "5px solid yellowgreen";
+
+    // Add text
+    div.innerText = "Bubu ji";
+
+    // Append to body
+    document.body.appendChild(div);
+</script>
+
+</html>
