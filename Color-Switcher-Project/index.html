@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLOR-SWITCHER-PROJECTS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   
+     <div class="container">
+         <h3>COLOR SWITCHER</h3>
+         <div class="color-container">
+            <div class="color-box"  data-color="Red"></div>
+            <div class="color-box"  data-color="Pink"></div>
+            <div class="color-box"  data-color="Green"></div>
+            <div class="color-box"  data-color="Yellow"></div>
+
+         </div>
+         
+         <div class="controls">
+            <input type="color" id="colorPicker">
+            <button class="randomColor">Random Color</button>
+         </div>
+         
+
+         <h3>Display color : <span id="colorValue">none</span></h3>
+
+         <div class="prevCol">
+            <button class="prev">Previous colors</button>
+            <div id="history"></div>
+         </div>
+
+        <div>
+             <script src="script.js"></script>
+        </div>
+
+        
+
+     </div>
+</body>
+</html>

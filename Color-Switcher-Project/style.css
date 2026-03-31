@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    
+    padding: 10px;
+    background-color: rgb(15, 238, 201);
+    border-radius: 4px;
+    box-shadow: 3px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.color-container{
+    margin-top: 30px;
+    display: flex;
+    gap: 50px;
+  /* //  justify-content: space-between; */
+    /* align-items: center; */
+    
+}
+
+.color-box {
+    width: 50px;
+    height: 45px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.color-box:nth-child(1) { background-color: red; }
+.color-box:nth-child(2) { background-color: pink; }
+.color-box:nth-child(3) { background-color: green; }
+.color-box:nth-child(4) { background-color: yellow; }
+
+
+.controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    
+}
+
+h3{
+    margin-top: 20px;
+    text-align: center;
+}
+
+#color-value{
+    
+    font-weight: bold;
+}
+
+body {
+    transition: background-color 0.5s ease;
+}
+
+.prevCol{
+   
+    margin-top: 22px;
+    text-align: center;
+}
+
+ .prev{
+    background-color: darkgrey;
+    padding: 3px 3px 4px 4px;
+ }
+
+ .randomColor{
+    background-color: rgb(5, 4, 4);
+    padding: 3px 3px 3px 4px;
+    color: antiquewhite;
+ }
